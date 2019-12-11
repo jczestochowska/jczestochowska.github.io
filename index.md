@@ -2,4 +2,4 @@
 
 **Hello World!!**
 
-{% include lqi_map.html %}
+{% include simple_html.html %}
