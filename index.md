@@ -2,4 +2,4 @@
 
 **Hello World!!**
 
-{% include plots/lqi_map.html %}
+{% include lqi_map.html %}
