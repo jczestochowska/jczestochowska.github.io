@@ -7,3 +7,5 @@
 {% include plot.html %}
 
 {% include chicago_map.html %}
+
+{% include lqi_map.html %}
