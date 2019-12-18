@@ -30,5 +30,14 @@ Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food
 
 {% include sd_complaints_community.html %}
 
-<div width="200" height="200">{% include sd_complaints_community.html %}</div>
 
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<table>
+<tr>
+<td>{% include sd_complaints_community.html %}</td>
+<td>Lorem ipsum</td>
+</tr>
+</table>
+
+| Priority apples | Second priority 
+|{% include sd_complaints_community.html %} | Lorem ipsum
