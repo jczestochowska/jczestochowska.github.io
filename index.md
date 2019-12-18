@@ -4,7 +4,7 @@
 Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food-inspections), our goal is to provide insights into food quality in the Windy City. We want to explore what are the violations that restaurants make most often, how they change over time and are they connected to the area where restaurant is located.
 
 <div>
-    <div>{% include lqi_map.html %}</div>
+    {% include lqi_map.html %}
     <div style="float: right">I'm on the second on the left</div>
 </div>
 
