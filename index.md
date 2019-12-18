@@ -7,3 +7,5 @@ Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food
 {% include lqi_map.html %}
 
 {% include results_of_inspections_per_year.html %}
+
+{% include sd_critical_district.html %}
