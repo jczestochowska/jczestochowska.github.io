@@ -22,4 +22,4 @@ To add your interactive (e.g plotly) plot:
 To add your plot as an image file:
 
 1. Place your image in the root directory of this repository
-2. Update index.md with following entry ![Title](filename.png)
+2. Update index.md with following entry `![Title](filename.png)`
