@@ -25,4 +25,9 @@ Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food
 
 {% include sd_complaints_district.html %}
 
-{% include sd_complaints_community.html %}
+<table border="0">
+ <tr>
+    <td>{% include sd_complaints_community.html %}</td>
+    <td>Lorem ipsum</td>
+ </tr>
+</table>
