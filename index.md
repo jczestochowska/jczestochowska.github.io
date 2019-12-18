@@ -17,7 +17,7 @@ Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food
 
 <div>
     <div>{% include lqi_map.html %}</div>
-    <div style="float: left; width: 50%">I'm on the second on the left</div>
+    <div style="float: right; width: 50%">I'm on the second on the left</div>
 </div>
 
 {% include results_of_inspections_per_year.html %}
