@@ -30,15 +30,5 @@ Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food
 
 {% include sd_complaints_community.html %}
 
-<div class="grid">
-    <div class="col-1-2">
-       <div class="content">
-           <p>...insert content left side...</p>
-       </div>
-    </div>
-    <div class="col-1-2">
-       <div class="content">
-           {% include sd_complaints_community.html %}
-       </div>
-    </div>
-</div>
+<div width="200" height="200">{% include sd_complaints_community.html %}</div>
+
