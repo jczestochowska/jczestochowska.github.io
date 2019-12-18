@@ -12,23 +12,42 @@ Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food
     </div>
 </div>
 
+<div>
 {% include results_of_inspections_per_year.html %}
+<div/>
 
+<div>
 {% include sd_critical_district.html %}
+<div>
 
+<div>
 {% include sd_critical_community.html %}
+<div>
 
+<div>
 {% include sd_failed_district.html %}
+<div>
 
+<div>
 {% include sd_failed_community.html %}
+<div>
 
+<div>
 {% include sd_refailed_district.html %}
+<div>
 
+<div>
 {% include sd_refailed_community.html %}
+<div>
 
+<div>
 {% include sd_complaints_district.html %}
+<div>
 
+<div>
 {% include sd_complaints_community.html %}
+<div>
+
 
 
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
