@@ -13,3 +13,17 @@ Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food
 {% include results_of_inspections_per_year.html %}
 
 {% include sd_critical_district.html %}
+
+{% include sd_critical_community.html %}
+
+{% include sd_failed_district.html %}
+
+{% include sd_failed_community.html %}
+
+{% include sd_refailed_district.html %}
+
+{% include sd_refailed_community.html %}
+
+{% include sd_complaints_district.html %}
+
+{% include sd_complaints_community.html %}
