@@ -3,9 +3,10 @@
 #lqi_map {
     width: max-content;
     float: left;
+    padding-right: 5%
+    
 }
 
 #map_wrapper {
     padding-bottom: 50%;
-    padding-right: 5%
 }
