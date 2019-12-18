@@ -1,4 +1,15 @@
 
+<style>
+ .grid {
+  display: flex;
+ }
+.col-1-2 {
+  flex: 1;
+}
+.cole-1-2:last-child {
+  margin-left: 20px;
+}
+</style>
 
 **With more than 14'000 restaurants, food is a serious business in Chicago. But choosing where to eat is not an easy task, especially when you want to avoid risky places. Our choices are usually affected by the reviews of other visitors and the location of the restaurant. But do we ever wonder if a restaurant fulfils all sanitary standards?**
 
@@ -26,3 +37,16 @@ Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food
 {% include sd_complaints_district.html %}
 
 {% include sd_complaints_community.html %}
+
+<div class="grid">
+    <div class="col-1-2">
+       <div class="content">
+           <p>...insert content left side...</p>
+       </div>
+    </div>
+    <div class="col-1-2">
+       <div class="content">
+           {% include sd_complaints_community.html %}
+       </div>
+    </div>
+</div>
