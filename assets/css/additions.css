@@ -4,3 +4,7 @@
     width: max-content;
     float: left;
 }
+
+#map_wrapper {
+    padding-bottom: 65%;
+}
