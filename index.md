@@ -11,7 +11,7 @@ So, what would be your approach to find a good restaurant? For sure Google will 
 
 Okay, those are pretty much standard approaches. Any other thoughts? 
 
-What if we tell you that we looked at restaurant's inspection results to figure out where to eat in Chicago? That's it, thousands of inspection reports with notes of poor inspectors saying that they saw cockroach in the pantry or that they closed the restaurant because it lacked defined vomiting procedures. When going to a restaurant,you rarely think if it fullfils all standards issued by the authorities. However, we believed that by using inspection results and non-standard approach to the "where-to-eat-tonight" problem, we can assess which restaurants in the Windy City are worth visiting. 
+What if we tell you that we looked at restaurant's inspection results to figure out where to eat in Chicago? That's right, thousands of inspection reports with notes of poor inspectors saying that they saw cockroach in the pantry or that they closed the restaurant because it lacked defined vomiting procedures. When going to a restaurant, you rarely think if it fullfils all standards issued by the authorities. However, we believed that by using inspection results and non-standard approach to the "where-to-eat-tonight" problem, we can assess which restaurants in the Windy City are worth visiting. 
 
 The dataset we used contains information from inspections of restaurants and other food establishments in Chicago in the past ten years. For every inspection, we can see the basic information about the restaurant such as name, licence number, location, Zip code, then the type of the inspection that was performed and, of course, the result of the inspection followed by the description of violations which were discovered.
 
@@ -73,6 +73,8 @@ If based on previous plots we wondered where are the food related violations in 
     <div/>
 </div>
 
+#### Safe and Dangerous Areas to Eat
+
 <div>
 {% include sd_critical_district.html %}
 <div>
@@ -87,14 +89,6 @@ If based on previous plots we wondered where are the food related violations in 
 
 <div>
 {% include sd_failed_community.html %}
-<div>
-
-<div>
-{% include sd_refailed_district.html %}
-<div>
-
-<div>
-{% include sd_refailed_community.html %}
 <div>
 
 <div>
