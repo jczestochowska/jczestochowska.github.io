@@ -21,9 +21,43 @@ On the following graph we can see how the inspection results looked like in the 
 
 #### Violations
 
-So, if we really want to figure out how good is the restaurant based on the inspection scores, the common sence tells us that if a restaurant makes many violations, we migth reconsider our decision to visit it. That is why we wanted to check how many violations restaurants make on average per inspection. But looking at several thousand of restaurants at a time isn't really possible, so we first group all of the restaurants based on their location. The city of Chicago is officially divided into 77 community areas, which are grouped into 9 districts. We used this geographical and administrative partition of the city as a starting point and checked how many violations per inspection restaurants make on average in each community area. **TODO**: Comment
+So, if we really want to figure out how good is the restaurant based on the inspection scores, the common sence tells us that if a restaurant makes many violations, we might reconsider our decision to visit it. That is why we wanted to check how many violations restaurants make on average per inspection. But looking at several thousand of restaurants at a time isn't really possible, so we first group all of the restaurants based on their location. The city of Chicago is officially divided into 77 community areas, which are grouped into 9 districts. We used this geographical and administrative partition of the city as a starting point and checked how many violations per inspection restaurants make on average in each community area. **TODO**: Comment
 
 **INSERT** Map of average number of violations per inspection per area
+
+Number of inspections tells us how many different fouls restaurant made, but it doesn't give any information about the core of the violation. Was it some life-threathening violation, or hazardous one? Was it related to food preparation process or cleaningness of the toilets? We can also find this kind of information. 
+
+Before 1.7.2018., an establishment could receive one or more of 45 distinct violations. After this date, the violations were completely redefined and their number increased to 59. Also, the inspections became much stricter and the result Pass with conditions is the dominant one in the previous year. That is why in the analysis we will usually look at those two periods separately. 
+
+Although every violation desribes specific foult a restaurant can make, all of the violations can be grouped into 5 general categories:
+
+1. **Food violations:** violations that are related to the food and ingredients: the way they are obtained, stored, transported, prepared, labeled etc.
+2. **Facility conditions violations:** presence of appropriatelly set up equipment and utilities (freezer, owens, work surface etc.), as well as requirements for the building and infrastructure (lighting, ventilation, temperature, pipes, walls etc.).
+3. **Sanitary related violations:** violations that are related to keeping all the equipment, rooms and surfaces clean .
+4. **Staff related violations:** violations related to the employees (necesarry trainings, the way they work with food, manager's work etc.).
+5. **Other:** the violations that did not match the previous groups (eg. summary report of the inspection visible to the public, no smoking regulations etc.).
+
+Now, let's see what are the violations that are made the most frequently. However, since our goal is to filter bad restaurants, we will focus only on the violations which were noticed in inspections that ended with failure. In the plot we will show top 25 most common violations in failed inspections before 1.7.2018.
+
+{% include violations_failed_category_before_change.html %}
+
+We have a winner! Among the failed inspections, dirty floor was mentioned the most as one of the violations. Two out of top three violations are related to cleaningness in the restaurant. Interestingly, many restaurants have problems with walls and ceiling constructions. Of course, there could be that some part of ceiling and wall problems is also due to dirtiness apart from construction.
+
+It seems that "most popular violations" are sanitary and facility related. What suprises is that, even though we are analysing restaurants, there is only one food related violation among the top 10 and it is on 10th place.
+
+Even though after June 2018. violations changed, since we group violations in the same 5 categories as before, let's check if there is any change in the most frequent violation categories in failed inspections.
+
+{% include violations_failed_category_after_change.html %}
+
+We already mentioned the big differences and stricter criteria after the change date. That can also be noticed in the violations that are made the most. Now for the first time we can see a big impact of **violations related to employees training**. Apparently, many restaurants did not have time do adjust properly to the new regulations and failed in the past year and a half due to inadequate management or lack of allergen training for the staff. Also, the City of Chicago requires defined procedures for many situations that can happen in a restaurant, and one that is the most problematic for restaurants to comply with is **reacting in case of customer sickness.** So be careful and remind yourself of your first aid knowledge, because the restaurant employees apparently cannot help you properly. Of course, when looking at these reasons, we have to take into account that these changed violation list is valid for less than 18 months, so there is smaller amount of inspections which can be analyzed.
+
+Great, now we had a deeper look into the meaning of the violations and understood what are the main problems for the restaurant. However, we still haven't considered the severity of the discovered violations. Validations before change were divided into 3 groups based on how serious the violation is: critical, serious or minor violation, sorted in decreasing severity.
+
+Of course the main interest point for us are critical violations. Those are the most serious and dangerous violations a restaurant can make. Therefore, we want to se what are the most frequent critical violations in inspections.
+
+{% include violations_failed_critical_category_before_change.html %}
+
+If based on previous plots we wondered where are the food related violations in restaurants' inspections, here they are. When looking at critical violations only, the top violation is related to **proper food storage temperature**. According to the full violation description, it means that potentially hazardous food meets temperature requirements during storage, preparation and service. On second and third place we have facility related violations, and then come the ones related to adequate cleaning of all necessary areas and equipement.
 
 <div id="bigger_wrapper">
     <div id="map_wrapper">
