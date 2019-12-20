@@ -46,7 +46,7 @@ Contrary to what one might think, the number of violations is not always a good 
 Although every violation describes some specific shortcoming of a restaurant, all of them, both before and after the change, can be grouped into 5 general categories:
 
 1. **Food violations:** violations that are related to the food and ingredients: the way they are obtained, stored, transported, prepared, labeled etc.
-2. **Facility conditions violations:** presence of appropriatelly set up equipment and utilities (freezer, owens, work surface etc.), as well as requirements for the building and infrastructure (lighting, ventilation, temperature, pipes, walls etc.).
+2. **Facility conditions violations:** presence of appropriatelly set up equipment and utilities (freezer, ovens, work surface etc.), as well as requirements for the building and infrastructure (lighting, ventilation, temperature, pipes, walls etc.).
 3. **Sanitary related violations:** violations that are related to keeping all the equipment, rooms and surfaces clean .
 4. **Staff related violations:** violations related to the employees (necesarry trainings, the way they work with food, manager's work etc.).
 5. **Other:** the violations that did not match the previous groups (eg. summary report of the inspection visible to the public, no smoking regulations etc.).
