@@ -50,18 +50,14 @@ Although every violation describes some specific shortcoming of a restaurant, al
 
 Now, being familiar with that, let's dive into the analysis!
 
-First let's if there are any patterns of the most common violations noted in Chicago. As mentioned, we can look at Chicago before the change of violations and after it.
+First let's see if there are any patterns of the most common violations noted in Chicago. As mentioned, we can look at Chicago before the change of violations and after it.
 
-<div id="bigger_wrapper">
-    <div class="clearfix" id="map_wrapper">
-        <div class="map-400 map-left">
-            {% include most_common_violations_before_change.html %}
-        </div>
-        <div id="map_text">
-            <p>Before the July of 2018 the predominant violation in most Chicago communities is **Proper floors maintenance**. Between Cicero and Oak Loan in the south-west side of Chicago you can also find the region of 7 communities, for whose restaurants the *Clean equipment* criterion was violated the most</p>
-        </div>
-    </div>
-</div>
+{% include most_common_violations.html %}
+
+Before the July of 2018 the predominant violation in most Chicago communities is *Proper floors maintenance*. Between Cicero and Oak Loan in the south-west side of Chicago you can also find a region of 7 communities, for whose restaurants the *Clean equipment* criterion was violated the most.
+
+After the change of violations restaurants in the huge part of the middle and southern bay area as well as the region between the New City and Greater Grand Crossing most oftenly violated *Adequate management* criterion - this concerns regulations about personell hierarchy and their reporting procedures. There are also regions in the north, south and west parts of Chicago where *Procedures for reacting to customer sickness* was the most common issue.
+
 
 <div id="bigger_wrapper">
     <div class="clearfix" id="map_wrapper">
@@ -69,7 +65,7 @@ First let's if there are any patterns of the most common violations noted in Chi
             {% include most_common_violations_after_change.html %}
         </div>
         <div id="map_text">
-            <p>After the change of violations restaurants in the huge part of the middle and southern bay area as well as the region between the New City and Greater Grand Crossing most oftenly violated **Adequate management** criterion - this concerns regulations about personell hierarchy and their reporting procuders. There are also regions in the north south and west of Chicago	where *Procedures for reacting to customer sickness* was the most common issue.</p>
+            <p></p>
         </div>
     </div>
 </div>
@@ -78,7 +74,7 @@ First let's if there are any patterns of the most common violations noted in Chi
 
 Now, let's see what are the most frequent violations. Since our goal is to filter bad restaurants, we will focus only on the violations which were noticed in inspections that ended with failure. Below are top 25 most common violations in failed inspections before 1.7.2018.
 
-{% include violations_failed_category_before_change.html %}
+{% include violations_failed_before.html %}
 
 We have a winner! As it was also seen on community maps of all violations, also among the failed inspections only, dirty floor was mentioned the most as one of the violations. Two out of top three violations are related to cleaningness in the restaurant. Interestingly, many restaurants have problems with walls and ceiling constructions. Of course, there could be that some part of ceiling and wall problems is also due to dirtiness apart from construction.
 
@@ -86,7 +82,7 @@ It seems that "most popular violations" are sanitary and facility related. It is
 
 Even though after June 2018. violations changed, since we group violations in the same 5 categories as before, let's check if there is any change in the most frequent violation categories in failed inspections.
 
-{% include violations_failed_category_after_change.html %}
+{% include violations_after_change.html %}
 
 We already mentioned the big differences and stricter criteria after the change date. That can also be noticed in the most often violations. Now for the first time we can see a big impact of **violations related to employees training**. Apparently, many restaurants did not have time do adjust properly to the new regulations and failed in the past year and a half due to inadequate management or lack of allergen training for the staff. Also, the City of Chicago requires defined procedures for many situations that can happen in a restaurant, and one that is the most problematic for restaurants to comply with is **reacting in case of customer sickness.** So be careful and remind yourself of your first aid knowledge, because the restaurant employees apparently cannot help you properly. Of course, when looking at these reasons, we have to take into account that these changed violation list is valid for less than 18 months, so there is a smaller amount of inspections which can be analyzed.
 
@@ -94,7 +90,7 @@ Great, now we had a deeper look into the meaning of the violations and understoo
 
 Of course the main interest point for us are critical violations. Those are the most serious and dangerous violations a restaurant can make. Therefore, we want to see what are the most frequent critical violations in inspections.
 
-{% include violations_failed_critical_category_before_change.html %}
+{% include critical_violations_before.html %}
 
 If based on previous plots we wondered where are the food related violations in restaurants' inspections, here they are. When looking at critical violations only, the top violation is related to **proper food storage temperature**. According to the full violation description, it means that potentially hazardous food meets temperature requirements during storage, preparation and service. On second and third place we have facility related violations, and then come the ones related to adequate cleaning of all necessary areas and equipement.
 
@@ -134,14 +130,8 @@ Now that we have discovered what are the violations restaurants make, let's use 
 
 As we previously discussed, not all violations are the same, and the most severe ones are critical violations. Therefore, if there are many inspections in which they were discovered, the area is considered more dangerous.
 
-**TODO**: Change with single plot
-
 <div>
-{% include sd_critical_district.html %}
-</div>
-
-<div>
-{% include sd_critical_community.html %}
+{% include percentage_critical_violations.html %}
 </div>
 
 By looking at districts, we can see that South Side restaurants make the most critical violations, where Northwest side is the safest district considering this criteria. If we take a closer look, Washington park restaurants on average make critical violation every fourth inspection. Oakland in South Side and Uptown in Far North Side are also highly ranked and can be qualified as dangerous areas. 
@@ -151,25 +141,15 @@ By looking at districts, we can see that South Side restaurants make the most cr
 Another criteria we can use is number of inspections ended in failure. Naturally, if there are more failures, the area is more dangerous. We will check the proportion of failures among total inspections for each area. If it is higher for some areas then for others, we consider them more dangerous areas.
 
 <div>
-{% include sd_failed_district.html %}
-</div>
-
-<div>
-{% include sd_failed_community.html %}
+{% include percentage_failed_inspections.html %}
 </div>
 
 Again, South Side is the district to avoid. Interestingly, city center has the lowest percentage of failed inspections. As the critical areas, we again have Oakland and Washington park as leading restaurant-dangerous communities in Chicago.
 
-
-
 Even though we are now focused on choosing the place to eat based on formal criteria like inspections, we would still like to include some user's opinion. Among all the inspections, there are some inspections of type complaint and suspected food poisoning. Complaint type means that the inspection is done inresponse to a complaint against the establishment. Suspected food poisioning is a specific type of complaint based inspection, when the inspection is done in response to one or more persons claiming to have gotten ill as a result of eating at the establishment. Therefore we will check number of inspections of type Complaint or Suspected Food Poisoning, because these inspections imply that users haven't been satisfied with the conditions in the restaurants. 
 
 <div>
-{% include sd_complaints_district.html %}
-</div>
-
-<div>
-{% include sd_complaints_community.html %}
+{% include average_number_of_complaints.html %}
 </div>
 
 We can clearly see that South is deffinitely more problematic than North. Chatham and Calumet Heights have on average around 3.5 complaints per restaurant. What is really interesting that Oakland, previously considered as food-dangerous area, didn't have any complaint inspection in the previous ten years! Apparently users do not notice the problems that inspectors continuously find in the Oakland restaurants.
@@ -179,8 +159,6 @@ We can clearly see that South is deffinitely more problematic than North. Chatha
 <div>
 {% include safety_scores_by_community_areas_map.html %}
 </div>
-
-
 
 
 We have dived a lot into Chicago's sanitary inspections! Having seen all the maps you probably know Windy City like a back of your hand. As generally we have seen that things seem to look pretty good when thinking about sanitary safety in restaurants in Chicago there are still some conclusions to take with you. Firstly it would be good to think twice before grabbing lunch in South or Far South Chicago. Those areas seem to have biggest amount of *food poisoning* cases. Although South has also the greatest number of violations maybe it is still worth a try. As we all know, everything that is risky definitely tastes better. We've seen that generally restaurants in Chicago pass the sanitary inspections, most of places also managed to fix commited violations and improve their standards. This definitely gives us some hope for even better culinary experience in the most populous city in USA. If you are a fast-food fan and plan to have real american experience in that matter, we would suggest to keep away from KFC for some time in the next year, their violation trend is increasingly distressing... Finally if you have always dreamt of basing your own food business we definitely recommand to focus on keeping your floor clean and your refrigerator cold. 
