@@ -46,7 +46,7 @@ Contrary to what one might think, the number of violations is not always a good 
 Although every violation describes some specific shortcoming of a restaurant, all of them, both before and after the change, can be grouped into 5 general categories:
 
 1. **Food violations:** violations that are related to the food and ingredients: the way they are obtained, stored, transported, prepared, labeled etc.
-2. **Facility conditions violations:** presence of appropriatelly set up equipment and utilities (freezer, owens, work surface etc.), as well as requirements for the building and infrastructure (lighting, ventilation, temperature, pipes, walls etc.).
+2. **Facility conditions violations:** presence of appropriatelly set up equipment and utilities (freezer, ovens, work surface etc.), as well as requirements for the building and infrastructure (lighting, ventilation, temperature, pipes, walls etc.).
 3. **Sanitary related violations:** violations that are related to keeping all the equipment, rooms and surfaces clean .
 4. **Staff related violations:** violations related to the employees (necesarry trainings, the way they work with food, manager's work etc.).
 5. **Other:** the violations that did not match the previous groups (eg. summary report of the inspection visible to the public, no smoking regulations etc.).
@@ -61,7 +61,7 @@ First let's see if there are any patterns of the most common violations noted in
 
 Before the July of 2018 the predominant violation in most Chicago communities is *Proper floors maintenance*. Between Cicero and Oak Loan in the south-west side of Chicago you can also find a region of 7 communities, for whose restaurants the *Clean equipment* criterion was violated the most.
 
-After the change of violations restaurants in the huge part of the middle and southern bay area as well as the region between the New City and Greater Grand Crossing most oftenly violated *Adequate management* criterion - this concerns regulations about personell hierarchy and their reporting procedures. There are also regions in the north, south and west parts of Chicago where *Procedures for reacting to customer sickness* was the most common issue.
+After the change of violations restaurants in the huge part of the middle and southern bay area as well as the region between the New City and Greater Grand Crossing most oftenly violated *Adequate management* criterion - this concerns regulations about personnel hierarchy and their reporting procedures. There are also regions in the north, south and west parts of Chicago where *Procedures for reacting to customer sickness* was the most common issue.
 
 <!-- Number of inspections tells us how many different fouls restaurant made, but it doesn't give any information about the core of the violation. Was it some life-threathening violation, or hazardous one? -->
 
@@ -130,7 +130,7 @@ As we previously discussed, not all violations are the same, and the most severe
 By looking at districts, we can see that South Side restaurants make the most critical violations, where Northwest side is the safest district considering this criteria. If we take a closer look, Washington park restaurants on average make critical violation every fourth inspection. Oakland in South Side and Uptown in Far North Side are also highly ranked and can be qualified as dangerous areas. 
 
 
-Another criteria we can use is number of inspections ended in failure. Naturally, if there are more failures, the area is more dangerous. We will check the proportion of failures among total inspections for each area. If it is higher for some areas then for others, we consider them more dangerous areas.
+Another criteria we can use is number of inspections ended in failure. Naturally, if there are more failures, the area is more dangerous. We will check the proportion of failures among total inspections for each area. If it is higher for some areas than for others, we consider them more dangerous areas.
 
 <div class="map">
 {% include percentage_failed_inspections.html %}
