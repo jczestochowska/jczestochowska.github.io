@@ -97,7 +97,7 @@ If based on previous plots we wondered where are the food related violations in 
 All inspections end with a verdict : Pass, Pass with conditions or Fail. Hence, the percentage of restaurants having succesfully passed their last inspection in each area
 is a good indicator of safety. Let's see which areas have the best and worst passing rates, and how these results evolve over time : 
 
-{% include pass_rate_year.html %}
+{% include pass_rates_year.html %}
 
 Starting in 2010, pass rates look good : Most areas have more than 85% of their restaurants passing inspections. Things get worse in 2012, with areas like Riverdale getting as low as 50%. Fast-forward to 2019, and we can see that although pass rates seem to have improved since 2012, they are still worse than in 2010. From 2010 to 2019, areas have overall seen their percentage of restaurants deemed safe by the authorities decrease, with Austin going from 84.8% to 74.8%, and Hermosa going from 94.1% to 75%
 
