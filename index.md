@@ -15,9 +15,11 @@ What if we tell you that we looked at restaurant's inspection results to figure 
 
 The dataset we used contains information from inspections of restaurants and other food establishments in Chicago in the past ten years. Every inspection comes with basic information about the restaurant such as name, licence number, location, zip code, then the type of the inspection that was performed and, of course, the result of the inspection followed by a description of the violations discovered.
 
-Let's start with a quick look on the inspection results of the past ten years. **TODO**: Comment
+Let's start with a quick look on the inspection results of the past ten years.
 
 {% include results_of_inspections_per_year.html %}
+
+It seems that majority of the restaurants managed to pass their inspections before 2018 but afterwards we can see increase in inspections that passed with conditions. What may have caused that? It is clearly not enough to look just at pass and fail we would like to discover what are the reasons behind inspection failure.
 
 #### Violations
 
@@ -154,3 +156,7 @@ Even though we are now focused on choosing the place to eat based on formal crit
 We can clearly see that South is deffinitely more problematic than North. Chatham and Calumet Heights have on average around 3.5 complaints per restaurant. What is really interesting that Oakland, previously considered as food-dangerous area, didn't have any complaint inspection in the previous ten years! Apparently users do not notice the problems that ispectors continuously find in the Oakland restaurants.
 
 **TODO** : Safety score map
+
+<div>
+{% include safety_scores_by_community_areas_map.html %}
+</div>
