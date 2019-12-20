@@ -71,7 +71,7 @@ Now, let's see what are the most frequent violations. Since our goal is to filte
 
 We have a winner! As it was also seen on community maps of all violations, also among the failed inspections only, dirty floor was mentioned the most as one of the violations. Two out of top three violations are related to cleaningness in the restaurant. Interestingly, many restaurants have problems with walls and ceiling constructions. Of course, there could be that some part of ceiling and wall problems is also due to dirtiness apart from construction.
 
-It seems that "most popular violations" are sanitary and facility related. It is surprising that even though we are analysing restaurants, there is only one food related violation among the top 10 and it is on 10th place.
+It seems that "most popular violations" are sanitary and facility related. It is surprising that even though we are analysing restaurants, there is only one food related violation among the top 10 and it is on the 10th place.
 
 Even though after June 2018. violations changed, since we group violations in the same 5 categories as before, let's check if there is any change in the most frequent violation categories in failed inspections.
 
@@ -85,7 +85,7 @@ Of course the main interest point for us are critical violations. Those are the 
 
 {% include critical_violations_before.html %}
 
-If based on previous plots we wondered where are the food related violations in restaurants' inspections, here they are. When looking at critical violations only, the top violation is related to **proper food storage temperature**. According to the full violation description, it means that potentially hazardous food meets temperature requirements during storage, preparation and service. On second and third place we have facility related violations, and then come the ones related to adequate cleaning of all necessary areas and equipement.
+If based on previous plots we wondered where are the food related violations in restaurants' inspections, here they are. When looking at critical violations only, the top violation is related to **proper food storage temperature**. According to the full violation description, it means that potentially hazardous food meets temperature requirements during storage, preparation and service. On second and third place we have facility related violations, and then come the ones related to adequate cleaning of all necessary areas and equipment.
 
 All inspections end with a verdict : Pass, Pass with conditions or Fail. Hence, the percentage of restaurants having succesfully passed their last inspection in each area
 is a good indicator of safety. Let's see which areas have the best and worst passing rates, and how these results evolve over time: 
@@ -154,6 +154,8 @@ Maybe in the previous parts we focused on the negative events for restaurants. E
 </div>
 
 According to the safety scores we calculated, it seems that the safest places to eat are the the two Airports (O'Hare, Garfield Ridge, Clearing) and the City Center (Loop). That's right, you may need to pay extra, since those are central tourist points, but you can be quite sure that the restaurant you are eating is fulfilling the regulations. As you are going further from this places, the risk increases. If you end up in Far South Side, feel free to grab something at South Deering, but be careful not to get lost in the streets, you may end up in Riverdale which has the worst overall restaurant performance in inspections.
+    
+<h2> Conclusion </h2>
   
 We have dived deep into Chicago's sanitary inspections! Having seen all these maps, you probably now know Windy City like the back of your hand. Generally, we have seen that Chicago restaurants mostly fullfil sanitary safety requirements, but there are still things you should watch out for. Firstly it would be good to think twice before grabbing lunch in South or Far South Chicago. Those areas seem to have largest amount of **food poisoning** cases. 
    
