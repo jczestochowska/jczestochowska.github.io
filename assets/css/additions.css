@@ -1,5 +1,3 @@
-
-
 #lqi_map {
     width: max-content;
     float: left;
@@ -7,3 +5,20 @@
     
 }
 
+.map-200 {
+	width: 200px;
+}
+
+.map-400 {
+	width: 400px;
+}
+
+.map-left {
+	float: left;
+	padding-right: 20px;
+}
+
+.map-right {
+	float: right;
+	padding-left: 20px;
+}

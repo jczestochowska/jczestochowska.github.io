@@ -29,7 +29,7 @@ So, if we really want to figure out how good a restaurant is, based on the inspe
 
 <div id="bigger_wrapper">
     <div id="map_wrapper">
-        <div id="lqi_map">
+        <div class="map-200 map-left">
             {% include most_common_violations_before_change.html %}
         </div>
         <div id="map_text">
@@ -40,7 +40,7 @@ So, if we really want to figure out how good a restaurant is, based on the inspe
 
 <div id="bigger_wrapper">
     <div id="map_wrapper">
-        <div id="lqi_map">
+        <div class="map-400 map-right">
             {% include most_common_violations_after_change.html %}
         </div>
         <div id="map_text">
