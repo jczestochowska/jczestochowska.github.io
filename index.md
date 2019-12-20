@@ -75,6 +75,12 @@ If based on previous plots we wondered where are the food related violations in 
 
 #### Safe and Dangerous Areas to Eat
 
+Now that we have discovered what are the violations restaurants make, let's use these insights to get some recommendations which places should be favored, and which ones avoided. Our idea is to use area in which the restaurant is located and try to discover which community areas are the safest ones considering the inspections' results. 
+
+As we previously discussed, not all violations are the same, and the most severe ones are critical violations. Therefore, if there are many inspections in which they were discovered, the area is considered more dangerous.
+
+**TODO**: Change with single plot
+
 <div>
 {% include sd_critical_district.html %}
 <div>
@@ -82,6 +88,10 @@ If based on previous plots we wondered where are the food related violations in 
 <div>
 {% include sd_critical_community.html %}
 <div>
+
+By looking at districts, we can see that South Side restaurants make the most critical violations, where Northwest side is the safest district considering this criteria. If we take a closer look, Washington park restaurants on average make critical violation every fourth inspection. Oakland in South Side and Uptown in Far North Side are also highly ranked and can get a title of dangerous areas. 
+
+Another criteria we can use is number of inspections ended in failure. Naturally, if there are more failures, the area is more dangerous. We will check the proportion of failures among total inspections for each area. If it is higher for some areas then for others, we consider them more dangerous areas.
 
 <div>
 {% include sd_failed_district.html %}
@@ -91,6 +101,10 @@ If based on previous plots we wondered where are the food related violations in 
 {% include sd_failed_community.html %}
 <div>
 
+Again, South Side is the district to avoid. Interestingly, city center has the lowest percentage of failed inspections. As the critical areas, we again have Oakland and Washington park as leading restaurant-dangerous communities in Chicago.
+
+Even though we are now focused on choosing the place to eat based on formal criteria like inspections, we would still like to include some user's opinion. Among all the inspections, there are some inspections of type complaint and suspected food poisoning. Complaint type means that the inspection is done inresponse to a complaint against the establishment. Suspected food poisioning is a specific type of complaint based inspection, when the inspection is done in response to one or more persons claiming to have gotten ill as a result of eating at the establishment. Therefore we will check number of inspections of type Complaint or Suspected Food Poisoning, because these inspections imply that users haven't been satisfied with the conditions in the restaurants. 
+
 <div>
 {% include sd_complaints_district.html %}
 <div>
@@ -98,3 +112,5 @@ If based on previous plots we wondered where are the food related violations in 
 <div>
 {% include sd_complaints_community.html %}
 <div>
+
+We can clearly see that South is deffinitely more problematic than North. Chatham and Calumet Heights have on average around 3.5 complaints per restaurant. What is really interesting that Oakland, previously considered as food-dangerous area, didn't have any complaint inspection in the previous ten years! Apparently users do not notice the problems that ispectors continuously find in the Oakland restaurants.
