@@ -27,11 +27,29 @@ So, if we really want to figure out how good a restaurant is, based on the inspe
 
 (draft) This gives us the very average idea of what is happening in Chicago (average over years and all restaurants). So let's look at the most common violations around Chicago communities.
 
-**INSERT** Map of most common violations (before and after on one plot).
+<div id="bigger_wrapper">
+    <div id="map_wrapper">
+        <div id="lqi_map">
+            {% include most_common_violations_before_change.html %}
+        </div>
+        <div id="map_text">
+            <p>(draft) Here I comment the patterns, e.g. there is a south east region where each neighborhood has issues with dirty equipment, most of Chicago is proper food maintenance.</p>
+        </div>
+    </div>
+</div>
 
-(draft) Here I comment the patterns, e.g. there is a south east region where each neighborhood has issues with dirty equipment, most of Chicago is proper food maintenance. In new violations, lower south side of bay site has issues with Adequate management (what does it mean)?
+<div id="bigger_wrapper">
+    <div id="map_wrapper">
+        <div id="lqi_map">
+            {% include most_common_violations_after_change.html %}
+        </div>
+        <div id="map_text">
+            <p>(draft) In new violations, lower south side of bay site has issues with Adequate management (what does it mean)?</p>
+        </div>
+    </div>
+</div>
 
-TODO: do we want to put w map where it shows that for each community the most common issue is related with a food category? Maybe just comment on that, that contradicts some previous point, which is good as well.
+To decide: do we want to put the map where it shows that for each community the most common issue is related with a food category? Maybe just comment on that, that contradicts some previous point, which is good as well.
 
 Number of inspections tells us how many different fouls restaurant made, but it doesn't give any information about the core of the violation. Was it some life-threathening violation, or hazardous one? Was it related to food preparation process or cleaningness of the toilets? We can also find this kind of information. 
 
