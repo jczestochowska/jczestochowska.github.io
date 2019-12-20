@@ -3,25 +3,25 @@
 
 Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food-inspections), our goal is to provide insights into food quality in the Windy City. We want to explore what are the violations that restaurants make most often, how they change over time and are they connected to the area where restaurant is located.
 --->
-Imagine that you are going to Chicago next week. It can be a business trip or a leisure, whichever you prefer in the moment. You'll be staying in Chicago for four days and you would want to explore the local gastronomy. A morning coffee with a lake view, then lunch with an old friend in one of local's hidden gem places and, in the end of the day a nice, romantic dinner with a glass of white vine. 
+Imagine that you are traveling to Chicago next week. Should it be for business or leisure, you'll be staying in Chicago for four days and you would like to discover the local gastronomy. A morning coffee with a lake view, then lunch with an old friend in a local hidden gem place and, in the end of the day a nice, romantic dinner. 
 
-Perfect day is easy to imagine, but hard to implement, right? If you want perfect meals for any part of the day, you have to spend some time figuring out which places you want to visit. This can often be a challenging and frustrating task, especially if you are in an unknown city. 
+But imagination is not enough to make such a perfect day happen ! If you want perfect meals for any part of the day, you have to spend some time figuring out which places you want to visit. This can often be a challenging and frustrating task, especially in an unknown city. 
 
-So, what would be your approach to find a good restaurant? For sure Google will be your friend in this exploration. Nowadays, we rarely visit places without checking the user reviews on TripAdvisor and Facebook, and we always look at the magnificent pictures of food that restaurants publish on their Instagram profiles. Also, we often know someone who knows someone who has recently been in Chicago, so we don't hesitate to contact them and ask for some recommendations. 
+So, what would be your approach to find a good restaurant? For sure, Google will be your friend in this exploration. Nowadays, few people visit places without checking user reviews on TripAdvisor and Facebook, and the magnificent pictures of food that restaurants publish on their Instagram profiles are often used as selection criteria. And let's not forget friends of friends of friends who have recently been in Chicago, who can often offer usefult recommendations.
 
-Okay, those are pretty much standard approaches. Any other thoughts? 
+Okay, those are pretty much standard approaches. Why not try something different? 
 
-What if we tell you that we looked at restaurant's inspection results to figure out where to eat in Chicago? That's right, thousands of inspection reports with notes of poor inspectors saying that they saw cockroach in the pantry or that they closed the restaurant because it lacked defined vomiting procedures. When going to a restaurant, you rarely think if it fullfils all standards issued by the authorities. However, we believed that by using inspection results and non-standard approach to the "where-to-eat-tonight" problem, we can assess which restaurants in the Windy City are worth visiting. 
+What if we tell you that we looked at restaurant's inspection results to figure out where to eat in Chicago? That's right, thousands of inspection reports with notes of poor inspectors relating their encounters with cockroaches in pantries, or that they closed restaurants because they lacked defined vomiting procedures. When going to a restaurant, you rarely wonder if it fullfils all standards issued by the authorities. However, inspection results can be used as a non-standard approach to the "where-to-eat-tonight" problem, and are very useful to assess which restaurants in the Windy City are worth visiting. 
 
-The dataset we used contains information from inspections of restaurants and other food establishments in Chicago in the past ten years. For every inspection, we can see the basic information about the restaurant such as name, licence number, location, Zip code, then the type of the inspection that was performed and, of course, the result of the inspection followed by the description of violations which were discovered.
+The dataset we used contains information from inspections of restaurants and other food establishments in Chicago in the past ten years. Every inspection comes with basic information about the restaurant such as name, licence number, location, zip code, then the type of the inspection that was performed and, of course, the result of the inspection followed by a description of the violations discovered.
 
-On the following graph we can see how the inspection results looked like in the past ten years. **TODO**: Comment
+Let's start with a quick look on the inspection results of the past ten years. **TODO**: Comment
 
 **INSERT** Plot Inspection results each year
 
 #### Violations
 
-So, if we really want to figure out how good is the restaurant based on the inspection scores, the common sence tells us that if a restaurant makes many violations, we might reconsider our decision to visit it. That is why we wanted to check how many violations restaurants make on average per inspection. But looking at several thousand of restaurants at a time isn't really possible, so we first group all of the restaurants based on their location. The city of Chicago is officially divided into 77 community areas, which are grouped into 9 districts. We used this geographical and administrative partition of the city as a starting point and checked how many violations per inspection restaurants make on average in each community area. **TODO**: Comment
+So, if we really want to figure out how good a restaurant is, based on the inspection results, the common sence tells us that if a restaurant makes many violations, we might reconsider our decision to visit it. That is why we wanted to check how many violations restaurants make on average per inspection. But looking at several thousand of restaurants at a time isn't really possible, so we first group all of the restaurants based on their location. The city of Chicago is officially divided into 77 community areas, which are grouped into 9 districts. We used this geographical and administrative partition of the city as a starting point and checked how many violations per inspection restaurants make on average in each community area. **TODO**: Comment
 
 **INSERT** Map of average number of violations per inspection per area
 
