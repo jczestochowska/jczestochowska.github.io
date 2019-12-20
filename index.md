@@ -61,7 +61,7 @@ First let's see if there are any patterns of the most common violations noted in
 
 Before the July of 2018 the predominant violation in most Chicago communities is *Proper floors maintenance*. Between Cicero and Oak Loan in the south-west side of Chicago you can also find a region of 7 communities, for whose restaurants the *Clean equipment* criterion was violated the most.
 
-After the change of violations restaurants in the huge part of the middle and southern bay area as well as the region between the New City and Greater Grand Crossing most oftenly violated *Adequate management* criterion - this concerns regulations about personell hierarchy and their reporting procedures. There are also regions in the north, south and west parts of Chicago where *Procedures for reacting to customer sickness* was the most common issue.
+After the change of violations restaurants in the huge part of the middle and southern bay area as well as the region between the New City and Greater Grand Crossing most oftenly violated *Adequate management* criterion - this concerns regulations about personnel hierarchy and their reporting procedures. There are also regions in the north, south and west parts of Chicago where *Procedures for reacting to customer sickness* was the most common issue.
 
 <!-- Number of inspections tells us how many different fouls restaurant made, but it doesn't give any information about the core of the violation. Was it some life-threathening violation, or hazardous one? -->
 
