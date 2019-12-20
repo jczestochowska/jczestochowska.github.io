@@ -152,3 +152,7 @@ Even though we are now focused on choosing the place to eat based on formal crit
 We can clearly see that South is deffinitely more problematic than North. Chatham and Calumet Heights have on average around 3.5 complaints per restaurant. What is really interesting that Oakland, previously considered as food-dangerous area, didn't have any complaint inspection in the previous ten years! Apparently users do not notice the problems that ispectors continuously find in the Oakland restaurants.
 
 **TODO** : Safety score map
+
+<div>
+{% include safety_scores_by_community_areas_map.html.html %}
+</div>
