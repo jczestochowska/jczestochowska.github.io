@@ -5,7 +5,7 @@ Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food
 --->
 Imagine that you are traveling to Chicago next week. Should it be for business or leisure, you'll be staying in Chicago for four days and you would like to discover the local gastronomy. A morning coffee with a lake view, then lunch with an old friend in a local hidden gem place and, at the end of the day a nice and romantic dinner. 
 
-But imagination is not enough to make such a perfect day happen ! If you want perfect meals all day long, you have to spend some time figuring out which places you want to visit. This can often be a challenging and frustrating task, especially in an unknown city. 
+But imagination is not enough to make such a perfect day happen! If you want perfect meals all day long, you have to spend some time figuring out which places you want to visit. This can often be a challenging and frustrating task, especially in an unknown city. 
 
 So, what would be your approach to find a good restaurant? For sure, Google will be your friend in this exploration. Nowadays, few people visit places without checking user reviews on TripAdvisor and Facebook, and the magnificent pictures of food that restaurants publish on their Instagram profiles are often used as selection criteria. And let's not forget friends of friends of friends who have recently been in Chicago, who can often offer useful recommendations.
 
@@ -46,7 +46,7 @@ Contrary to what one might think, the number of violations is not always a good 
 Although every violation describes some specific shortcoming of a restaurant, all of them, both before and after the change, can be grouped into 5 general categories:
 
 1. **Food violations:** violations that are related to the food and ingredients: the way they are obtained, stored, transported, prepared, labeled etc.
-2. **Facility conditions violations:** presence of appropriatelly set up equipment and utilities (freezer, owens, work surface etc.), as well as requirements for the building and infrastructure (lighting, ventilation, temperature, pipes, walls etc.).
+2. **Facility conditions violations:** presence of appropriatelly set up equipment and utilities (freezer, ovens, work surface etc.), as well as requirements for the building and infrastructure (lighting, ventilation, temperature, pipes, walls etc.).
 3. **Sanitary related violations:** violations that are related to keeping all the equipment, rooms and surfaces clean .
 4. **Staff related violations:** violations related to the employees (necesarry trainings, the way they work with food, manager's work etc.).
 5. **Other:** the violations that did not match the previous groups (eg. summary report of the inspection visible to the public, no smoking regulations etc.).
@@ -61,7 +61,7 @@ First let's see if there are any patterns of the most common violations noted in
 
 Before the July of 2018 the predominant violation in most Chicago communities is *Proper floors maintenance*. Between Cicero and Oak Loan in the south-west side of Chicago you can also find a region of 7 communities, for whose restaurants the *Clean equipment* criterion was violated the most.
 
-After the change of violations restaurants in the huge part of the middle and southern bay area as well as the region between the New City and Greater Grand Crossing most oftenly violated *Adequate management* criterion - this concerns regulations about personell hierarchy and their reporting procedures. There are also regions in the north, south and west parts of Chicago where *Procedures for reacting to customer sickness* was the most common issue.
+After the change of violations restaurants in the huge part of the middle and southern bay area as well as the region between the New City and Greater Grand Crossing most oftenly violated *Adequate management* criterion - this concerns regulations about personnel hierarchy and their reporting procedures. There are also regions in the north, south and west parts of Chicago where *Procedures for reacting to customer sickness* was the most common issue.
 
 <!-- Number of inspections tells us how many different fouls restaurant made, but it doesn't give any information about the core of the violation. Was it some life-threathening violation, or hazardous one? -->
 
@@ -88,9 +88,11 @@ Of course the main interest point for us are critical violations. Those are the 
 If based on previous plots we wondered where are the food related violations in restaurants' inspections, here they are. When looking at critical violations only, the top violation is related to **proper food storage temperature**. According to the full violation description, it means that potentially hazardous food meets temperature requirements during storage, preparation and service. On second and third place we have facility related violations, and then come the ones related to adequate cleaning of all necessary areas and equipement.
 
 All inspections end with a verdict : Pass, Pass with conditions or Fail. Hence, the percentage of restaurants having succesfully passed their last inspection in each area
-is a good indicator of safety. Let's see which areas have the best and worst passing rates, and how these results evolve over time : 
+is a good indicator of safety. Let's see which areas have the best and worst passing rates, and how these results evolve over time: 
 
+<div class="map">
 {% include pass_rates_year.html %}
+</div>
 
 Starting in 2010, pass rates look good : Most areas have more than 85% of their restaurants passing inspections. Things get worse in 2012, with areas like Riverdale getting as low as 50%. Fast-forward to 2019, and we can see that although pass rates seem to have improved since 2012, they are still worse than in 2010. From 2010 to 2019, areas have overall seen their percentage of restaurants deemed safe by the authorities decrease, with Austin going from 84.8% to 74.8%, and Hermosa going from 94.1% to 75%
 
@@ -107,7 +109,7 @@ Now that you know which areas are the safest to eat in, you are probably choosin
 {% include chain_violation_year.html %}
 
 From 2010 to 2019, the ranking of the safest restaurant chains changes every year : Subway starts as the safest, quickly replaced by Starbucks, then Taco Bell, KFC and finally Taco Bell again.  
-Violation numbers advise us to prefer tacos(Taco Bell) to fried chicken(KFC). What about inspection pass rates ?
+Violation numbers advise us to prefer tacos (Taco Bell) to fried chicken (KFC). What about inspection pass rates ?
 
 {% include chain_pass_rate.html %}
 
@@ -129,8 +131,7 @@ As we previously discussed, not all violations are the same, and the most severe
 By looking at districts, we can see that South Side restaurants make the most critical violations, where Northwest side is the safest district considering this criteria. If we take a closer look, Washington park restaurants on average make critical violation every fourth inspection. Oakland in South Side and Uptown in Far North Side are also highly ranked and can be qualified as dangerous areas. 
 
 
-
-Another criteria we can use is number of inspections ended in failure. Naturally, if there are more failures, the area is more dangerous. We will check the proportion of failures among total inspections for each area. If it is higher for some areas then for others, we consider them more dangerous areas.
+Another criteria we can use is number of inspections ended in failure. Naturally, if there are more failures, the area is more dangerous. We will check the proportion of failures among total inspections for each area. If it is higher for some areas than for others, we consider them more dangerous areas.
 
 <div class="map">
 {% include percentage_failed_inspections.html %}
