@@ -5,12 +5,16 @@
     
 }
 
-.map-200 {
-	width: 200px;
+.clearfix {
+  overflow: auto;
 }
 
 .map-400 {
 	width: 400px;
+}
+
+.map-600 {
+	width: 600px;
 }
 
 .map-left {

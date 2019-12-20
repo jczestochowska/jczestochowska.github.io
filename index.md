@@ -28,8 +28,8 @@ So, if we really want to figure out how good a restaurant is, based on the inspe
 (draft) This gives us the very average idea of what is happening in Chicago (average over years and all restaurants). So let's look at the most common violations around Chicago communities.
 
 <div id="bigger_wrapper">
-    <div id="map_wrapper">
-        <div class="map-200 map-left">
+    <div class="clearfix" id="map_wrapper">
+        <div class="map-400 map-left">
             {% include most_common_violations_before_change.html %}
         </div>
         <div id="map_text">
@@ -39,8 +39,8 @@ So, if we really want to figure out how good a restaurant is, based on the inspe
 </div>
 
 <div id="bigger_wrapper">
-    <div id="map_wrapper">
-        <div class="map-400 map-right">
+    <div class="clearfix" id="map_wrapper">
+        <div class="map-600 map-right">
             {% include most_common_violations_after_change.html %}
         </div>
         <div id="map_text">
