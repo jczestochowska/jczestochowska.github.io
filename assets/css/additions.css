@@ -5,8 +5,12 @@
     
 }
 
+.mapboxgl-canvas {
+	height: 450px !important;
+}
+
 .map {
-	margin: 20px 0;
+	margin: 20px 0 40px 0;
 }
 
 .clearfix {
