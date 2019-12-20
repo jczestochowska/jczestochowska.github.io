@@ -3,11 +3,11 @@
 
 Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food-inspections), our goal is to provide insights into food quality in the Windy City. We want to explore what are the violations that restaurants make most often, how they change over time and are they connected to the area where restaurant is located.
 --->
-Imagine that you are traveling to Chicago next week. Should it be for business or leisure, you'll be staying in Chicago for four days and you would like to discover the local gastronomy. A morning coffee with a lake view, then lunch with an old friend in a local hidden gem place and, in the end of the day a nice, romantic dinner. 
+Imagine that you are traveling to Chicago next week. Should it be for business or leisure, you'll be staying in Chicago for four days and you would like to discover the local gastronomy. A morning coffee with a lake view, then lunch with an old friend in a local hidden gem place and, at the end of the day a nice and romantic dinner. 
 
-But imagination is not enough to make such a perfect day happen ! If you want perfect meals for any part of the day, you have to spend some time figuring out which places you want to visit. This can often be a challenging and frustrating task, especially in an unknown city. 
+But imagination is not enough to make such a perfect day happen ! If you want perfect meals all day long, you have to spend some time figuring out which places you want to visit. This can often be a challenging and frustrating task, especially in an unknown city. 
 
-So, what would be your approach to find a good restaurant? For sure, Google will be your friend in this exploration. Nowadays, few people visit places without checking user reviews on TripAdvisor and Facebook, and the magnificent pictures of food that restaurants publish on their Instagram profiles are often used as selection criteria. And let's not forget friends of friends of friends who have recently been in Chicago, who can often offer usefult recommendations.
+So, what would be your approach to find a good restaurant? For sure, Google will be your friend in this exploration. Nowadays, few people visit places without checking user reviews on TripAdvisor and Facebook, and the magnificent pictures of food that restaurants publish on their Instagram profiles are often used as selection criteria. And let's not forget friends of friends of friends who have recently been in Chicago, who can often offer useful recommendations.
 
 Okay, those are pretty much standard approaches. Why not try something different? 
 
@@ -98,25 +98,31 @@ Of course the main interest point for us are critical violations. Those are the 
 
 If based on previous plots we wondered where are the food related violations in restaurants' inspections, here they are. When looking at critical violations only, the top violation is related to **proper food storage temperature**. According to the full violation description, it means that potentially hazardous food meets temperature requirements during storage, preparation and service. On second and third place we have facility related violations, and then come the ones related to adequate cleaning of all necessary areas and equipement.
 
-The inspection board of Chicago also attributes risk levels to restaurants : restaurants with the highest risk level (Level 1) are considered dangerous and must be inspected more often than others, while restaurants with the lowest level (Level 3) are considered mostly safe and don't require frequent inspections. Let's see how these risk levels have evolved between 2010 and 2018 : 
+All inspections end with a verdict : Pass, Pass with conditions or Fail. Hence, the percentage of restaurants having succesfully passed their last inspection in each area
+is a good indicator of safety. Let's see which areas have the best and worst passing rates, and how these results evolve over time : 
 
+{% include pass_rate_year_area.html %}
 
+Starting in 2010, pass rates look good : Most areas have more than 85% of their restaurants passing inspections. Things get worse in 2012, with areas like Riverdale getting as low as 50%. Fast-forward to 2019, and we can see that although pass rates seem to have improved since 2012, they are still worse than in 2010. From 2010 to 2019, areas have overall seen their percentage of restaurants deemed safe by the authorities decrease, with Austin going from 84.8% to 74.8%, and Hermosa going from 94.1% to 75%
 
-<div id="bigger_wrapper">
-    <div id="map_wrapper">
-        <div id="lqi_map">
-            {% include lqi_map.html %}
-        </div>
-        <div id="map_text">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Since inspections have gotten stricter over time, has the overall pass rate of Chicago restaurants decreased ? Not significantly.
 
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-</p>
-        </div>
-    </div>
-</div>
+{% include pass_year.html %}
 
+From 74% in 2010 to 65%, the inspection pass rate of Chicago has decreased, but by less than 10%.  
+  
+Now that you know which areas are the safest to eat in, you are probably choosing a restaurant. Like most people, you might want to stick with famous restaurant chains, such as McDonald's, Burger King or KFC. But which of these chains is actually the safest ? We have computed and compared some metrics to help you make the healthiest choice, starting with the number of violations over time :
+
+{% include chain_violation_year.html %}
+
+From 2010 to 2019, the ranking of the safest restaurant chains changes every year : Subway starts as the safest, quickly replaced by Starbucks, then Taco Bell, KFC and finally Taco Bell again.  
+Violation numbers advise us to prefer tacos(Taco Bell) to fried chicken(KFC). What about inspection pass rates ?
+
+{% include chain_pass_rate.html %}
+
+While pass rates are quite close for all chains, Starbucks pulls ahead of the competition with 88% of its inspections being succesful.  
+So, if you're visiting Chicago and you want some fast and clean food, Starbucks is the way to go... Unless you want a proper meal instead of a frappuccino, in which case  
+Taco Bell can be a good choice.
 
 
 #### Safe and Dangerous Areas to Eat
