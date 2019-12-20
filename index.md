@@ -129,14 +129,8 @@ Now that we have discovered what are the violations restaurants make, let's use 
 
 As we previously discussed, not all violations are the same, and the most severe ones are critical violations. Therefore, if there are many inspections in which they were discovered, the area is considered more dangerous.
 
-**TODO**: Change with single plot
-
 <div>
-{% include sd_critical_district.html %}
-</div>
-
-<div>
-{% include sd_critical_community.html %}
+{% include percentage_critical_violations.html %}
 </div>
 
 By looking at districts, we can see that South Side restaurants make the most critical violations, where Northwest side is the safest district considering this criteria. If we take a closer look, Washington park restaurants on average make critical violation every fourth inspection. Oakland in South Side and Uptown in Far North Side are also highly ranked and can be qualified as dangerous areas. 
@@ -146,25 +140,15 @@ By looking at districts, we can see that South Side restaurants make the most cr
 Another criteria we can use is number of inspections ended in failure. Naturally, if there are more failures, the area is more dangerous. We will check the proportion of failures among total inspections for each area. If it is higher for some areas then for others, we consider them more dangerous areas.
 
 <div>
-{% include sd_failed_district.html %}
-</div>
-
-<div>
-{% include sd_failed_community.html %}
+{% include percentage_failed_inspections.html %}
 </div>
 
 Again, South Side is the district to avoid. Interestingly, city center has the lowest percentage of failed inspections. As the critical areas, we again have Oakland and Washington park as leading restaurant-dangerous communities in Chicago.
 
-
-
 Even though we are now focused on choosing the place to eat based on formal criteria like inspections, we would still like to include some user's opinion. Among all the inspections, there are some inspections of type complaint and suspected food poisoning. Complaint type means that the inspection is done inresponse to a complaint against the establishment. Suspected food poisioning is a specific type of complaint based inspection, when the inspection is done in response to one or more persons claiming to have gotten ill as a result of eating at the establishment. Therefore we will check number of inspections of type Complaint or Suspected Food Poisoning, because these inspections imply that users haven't been satisfied with the conditions in the restaurants. 
 
 <div>
-{% include sd_complaints_district.html %}
-</div>
-
-<div>
-{% include sd_complaints_community.html %}
+{% include average_number_of_complaints.html %}
 </div>
 
 We can clearly see that South is deffinitely more problematic than North. Chatham and Calumet Heights have on average around 3.5 complaints per restaurant. What is really interesting that Oakland, previously considered as food-dangerous area, didn't have any complaint inspection in the previous ten years! Apparently users do not notice the problems that inspectors continuously find in the Oakland restaurants.
@@ -174,8 +158,6 @@ We can clearly see that South is deffinitely more problematic than North. Chatha
 <div>
 {% include safety_scores_by_community_areas_map.html %}
 </div>
-
-
 
 
 We have dived a lot into Chicago's sanitary inspections! Having seen all the maps you probably know Windy City like a back of your hand. As generally we have seen that things seem to look pretty good when thinking about sanitary safety in restaurants in Chicago there are still some conclusions to take with you. Firstly it would be good to think twice before grabbing lunch in South or Far South Chicago. Those areas seem to have biggest amount of *food poisoning* cases. Although South has also the greatest number of violations maybe it is still worth a try. As we all know, everything that is risky definitely tastes better. We've seen that generally restaurants in Chicago pass the sanitary inspections, most of places also managed to fix commited violations and improve their standards. This definitely gives us some hope for even better culinary experience in the most populous city in USA. If you are a fast-food fan and plan to have real american experience in that matter, we would suggest to keep away from KFC for some time in the next year, their violation trend is increasingly distressing... Finally if you have always dreamt of basing your own food business we definitely recommand to focus on keeping your floor clean and your refrigerator cold. 
