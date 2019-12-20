@@ -15,9 +15,11 @@ What if we tell you that we looked at restaurant's inspection results to figure 
 
 The dataset we used contains information from inspections of restaurants and other food establishments in Chicago in the past ten years. Every inspection comes with basic information about the restaurant such as name, licence number, location, zip code, then the type of the inspection that was performed and, of course, the result of the inspection followed by a description of the violations discovered.
 
-Let's start with a quick look on the inspection results of the past ten years. **TODO**: Comment
+Let's start with a quick look on the inspection results of the past ten years.
 
 {% include results_of_inspections_per_year.html %}
+
+It seems that majority of the restaurants managed to pass their inspections before 2018 but afterwards we can see increase in inspections that passed with conditions. What may have caused that? It is clearly not enough to look just at pass and fail we would like to discover what are the reasons behind inspection failure.
 
 #### Violations
 
