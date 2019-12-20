@@ -25,7 +25,17 @@ So, if we really want to figure out how good a restaurant is, based on the inspe
 
 **INSERT** Map of average number of violations per inspection per area
 
-(draft) This gives us the very average idea of what is happening in Chicago (average over years and all restaurants). So let's look at the most common violations around Chicago communities.
+Now we know the numbers, but we still don't know what hides behind them. Observed violations can differ in the aspect of the restaurant their describe: there can be some issues with the food, with the facilities or the training of the personnel. Knowing which violations and where were the most prevalent could give us some understanding. Was it related to food preparation process or cleaningness of the toilets? We can also find this kind of information.
+
+**One note before we dive into the analysis:** Chicago changed their violation definitions in the middle of 2018. Before the change an establishment could receive one or more of 45 distinct violations. After the change, the violations were redefined and their number increased to 59. Also, the inspections became much stricter and now you're more likely to rather get just a "Pass with conditions" than a clear "Pass" if you violate some criteria. That is why in the analysis we will usually look at those two periods separately.
+
+Although every violation describes some specific shortcoming of a restaurant, all of them, both before and after the change, can be grouped into 5 general categories:
+
+1. **Food violations:** violations that are related to the food and ingredients: the way they are obtained, stored, transported, prepared, labeled etc.
+2. **Facility conditions violations:** presence of appropriatelly set up equipment and utilities (freezer, owens, work surface etc.), as well as requirements for the building and infrastructure (lighting, ventilation, temperature, pipes, walls etc.).
+3. **Sanitary related violations:** violations that are related to keeping all the equipment, rooms and surfaces clean .
+4. **Staff related violations:** violations related to the employees (necesarry trainings, the way they work with food, manager's work etc.).
+5. **Other:** the violations that did not match the previous groups (eg. summary report of the inspection visible to the public, no smoking regulations etc.).
 
 <div id="bigger_wrapper">
     <div class="clearfix" id="map_wrapper">
@@ -49,19 +59,7 @@ So, if we really want to figure out how good a restaurant is, based on the inspe
     </div>
 </div>
 
-To decide: do we want to put the map where it shows that for each community the most common issue is related with a food category? Maybe just comment on that, that contradicts some previous point, which is good as well.
-
-Number of inspections tells us how many different fouls restaurant made, but it doesn't give any information about the core of the violation. Was it some life-threathening violation, or hazardous one? Was it related to food preparation process or cleaningness of the toilets? We can also find this kind of information. 
-
-Before 1.7.2018., an establishment could receive one or more of 45 distinct violations. After this date, the violations were completely redefined and their number increased to 59. Also, the inspections became much stricter and the result Pass with conditions is the dominant one in the previous year. That is why in the analysis we will usually look at those two periods separately. 
-
-Although every violation desribes specific foult a restaurant can make, all of the violations can be grouped into 5 general categories:
-
-1. **Food violations:** violations that are related to the food and ingredients: the way they are obtained, stored, transported, prepared, labeled etc.
-2. **Facility conditions violations:** presence of appropriatelly set up equipment and utilities (freezer, owens, work surface etc.), as well as requirements for the building and infrastructure (lighting, ventilation, temperature, pipes, walls etc.).
-3. **Sanitary related violations:** violations that are related to keeping all the equipment, rooms and surfaces clean .
-4. **Staff related violations:** violations related to the employees (necesarry trainings, the way they work with food, manager's work etc.).
-5. **Other:** the violations that did not match the previous groups (eg. summary report of the inspection visible to the public, no smoking regulations etc.).
+<!-- Number of inspections tells us how many different fouls restaurant made, but it doesn't give any information about the core of the violation. Was it some life-threathening violation, or hazardous one? -->
 
 Now, let's see what are the violations that are made the most frequently. However, since our goal is to filter bad restaurants, we will focus only on the violations which were noticed in inspections that ended with failure. In the plot we will show top 25 most common violations in failed inspections before 1.7.2018.
 
