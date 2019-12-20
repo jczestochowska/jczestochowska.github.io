@@ -115,11 +115,11 @@ As we previously discussed, not all violations are the same, and the most severe
 
 <div>
 {% include sd_critical_district.html %}
-<div>
+</div>
 
 <div>
 {% include sd_critical_community.html %}
-<div>
+</div>
 
 By looking at districts, we can see that South Side restaurants make the most critical violations, where Northwest side is the safest district considering this criteria. If we take a closer look, Washington park restaurants on average make critical violation every fourth inspection. Oakland in South Side and Uptown in Far North Side are also highly ranked and can get a title of dangerous areas. 
 
@@ -129,11 +129,11 @@ Another criteria we can use is number of inspections ended in failure. Naturally
 
 <div>
 {% include sd_failed_district.html %}
-<div>
+</div>
 
 <div>
 {% include sd_failed_community.html %}
-<div>
+</div>
 
 Again, South Side is the district to avoid. Interestingly, city center has the lowest percentage of failed inspections. As the critical areas, we again have Oakland and Washington park as leading restaurant-dangerous communities in Chicago.
 
@@ -143,11 +143,11 @@ Even though we are now focused on choosing the place to eat based on formal crit
 
 <div>
 {% include sd_complaints_district.html %}
-<div>
+</div>
 
 <div>
 {% include sd_complaints_community.html %}
-<div>
+</div>
 
 We can clearly see that South is deffinitely more problematic than North. Chatham and Calumet Heights have on average around 3.5 complaints per restaurant. What is really interesting that Oakland, previously considered as food-dangerous area, didn't have any complaint inspection in the previous ten years! Apparently users do not notice the problems that ispectors continuously find in the Oakland restaurants.
 
