@@ -21,7 +21,7 @@ Let's start with a quick look on the inspection results of the past ten years.
 
 It seems that majority of the restaurants managed to pass their inspections before 2018 but afterwards we can see increase in inspections that passed with conditions. What may have caused that? It is clearly not enough to look just at pass and fail we would like to discover what are the reasons behind inspection failure.
 
-#### Violations
+<h2>Violations</h2>
 
 So, if we really want to figure out how good a restaurant is, based on the inspection results, common sense tells us that if a restaurant commits many violations, we might reconsider our decision to visit it. That is why we wanted to check how many violations restaurants make on average per inspection. But looking at several thousand of restaurants at a time isn't really possible, so we first group all of the restaurants based on their location. The city of Chicago is officially divided into 77 community areas, which are grouped into 9 districts. We used this geographical and administrative partition of the city as a starting point and checked how many violations per inspection restaurants make on average in each community area. 
 
@@ -30,15 +30,15 @@ So, if we really want to figure out how good a restaurant is, based on the inspe
 </div>
 
 The community areas with the highest number of violations are West Ridge, South Lawndale, Washington Park and Chatham. We can see an area in the south of Chicago with noticeably high numbers of violations, made of Chatham, Roseland, West Pullman, Wasington Heights, and Morgan Park. The lakeside community areas, on the other hand, contain the safest restaurants : Loop, Near South side and Douglas.
-Are areas likely to change their number violations over time ? Let's take a look at how the number of violations evolves over time, for each community area.
+Are areas likely to change their number of violations over time ? Let's take a look at how the number of violations evolves over time, for each community area.
 
 <div class="map">
 {% include nb_violations_evolution.html %}
 </div>
 
-In most areas, the number of violations observed has decreased. Surprinsgly, the few areas who have seen their number increase are not the ones with the highest violation numbers : Near West Side and Logan Square, though definitely not the areas with least violations, were not the worst either as we've seen previously.
+In most areas, the number of violations observed has decreased. Surprisingly, the few areas who have seen their number increase are not the ones with the highest violation numbers : Near West Side and Logan Square, though definitely not the areas with least violations, were not the worst either as we've seen previously.
 
-Now we know the numbers, but we still don't know what hides behind them. Observed violations are very diverse: they can represent issues with the food, with the facilities or the training of the personnel. Knowing which violations are the most prevalent and where they are mainly observed could give help us pick the best areas. 
+Now we know the numbers, but we still don't know what hides behind them. Observed violations are very diverse: they can represent issues with the food, with the facilities or the training of the personnel. Knowing which violations are the most prevalent and where they are mainly observed could help us pick the best areas. 
 Contrary to what one might think, the number of violations is not always a good indicator of the inspection result. Indeed, some passing restaurants have comitted up to 13 violations, while some failing restaurants have less than 4 violations.
 
 **One note before we dive into the analysis:** Chicago changed their violation definitions in the middle of 2018. Before the change an establishment could receive one or more of 45 distinct violations. After the change, the violations were redefined and their number increased to 59. The inspections also became much stricter and inspectors are now more likely to deliver just "Pass with conditions" results rather than a clear "Pass" if some criteria are violated. That is why in the analysis we will usually look at those two periods separately.
@@ -99,8 +99,10 @@ Since inspections have gotten stricter over time, has the overall pass rate of C
 {% include pass_year.html %}
 
 From 74% in 2010 to 65%, the inspection pass rate of Chicago has decreased, but by less than 10%.  
-  
-Now that you know which areas are the safest to eat in, you are probably choosing a restaurant. Like most people, you might want to stick with famous restaurant chains, such as McDonald's, Burger King or KFC. But which of these chains is actually the safest ? We have computed and compared some metrics to help you make the healthiest choice, starting with the number of violations over time :
+
+<h2>Restaurant Chains </h2>
+
+Now that you know which areas are the safest to eat in, you are probably choosing a restaurant. Like most people, you might want to stick with famous restaurant chains, such as McDonald's, Burger King or KFC. But which of these chains is actually the safest ? We have computed and compared some metrics to help you make the "healthiest" choice, starting with the number of violations over time :
 
 {% include chain_violation_year.html %}
 
@@ -110,11 +112,10 @@ Violation numbers advise us to prefer tacos(Taco Bell) to fried chicken(KFC). Wh
 {% include chain_pass_rate.html %}
 
 While pass rates are quite close for all chains, Starbucks pulls ahead of the competition with 88% of its inspections being succesful.  
-So, if you're visiting Chicago and you want some fast and clean food, Starbucks is the way to go... Unless you want a proper meal instead of a frappuccino, in which case  
-Taco Bell can be a good choice.
+So, if you're visiting Chicago and you want some fast and clean food, Starbucks is the way to go... Unless you want a proper meal instead of a frappuccino, in which case Taco Bell can be a good choice.
 
 
-#### Safe and Dangerous Areas to Eat
+<h2> Safe and Dangerous Areas to Eat </h2>
 
 
 Now that we have discovered what are the violations restaurants make, let's use these insights to get some recommendations which places should be favored, and which ones avoided. Our idea is to use area in which the restaurant is located and try to discover which community areas are the safest ones considering the inspections' results. 
@@ -137,7 +138,7 @@ Another criteria we can use is number of inspections ended in failure. Naturally
 
 Again, South Side is the district to avoid. Interestingly, city center has the lowest percentage of failed inspections. As the critical areas, we again have Oakland and Washington park as leading restaurant-dangerous communities in Chicago.
 
-Even though we are now focused on choosing the place to eat based on formal criteria like inspections, we would still like to include some user's opinion. Among all the inspections, there are some inspections of type complaint and suspected food poisoning. Complaint type means that the inspection is done inresponse to a complaint against the establishment. Suspected food poisioning is a specific type of complaint based inspection, when the inspection is done in response to one or more persons claiming to have gotten ill as a result of eating at the establishment. Therefore we will check number of inspections of type Complaint or Suspected Food Poisoning, because these inspections imply that users haven't been satisfied with the conditions in the restaurants. 
+Even though we are now focused on choosing the place to eat based on formal criteria like inspections, we would still like to include some user's opinion. Among all the inspections, there are some inspections of type complaint and suspected food poisoning. Complaint type means that the inspection is done in response to a complaint against the establishment. Suspected food poisioning is a specific type of complaint based inspection, when the inspection is done in response to one or more persons claiming to have gotten ill as a result of eating at the establishment. Therefore we will check number of inspections of type Complaint or Suspected Food Poisoning, because these inspections imply that users haven't been satisfied with the conditions in the restaurants. 
 
 <div class="map">
 {% include average_number_of_complaints.html %}
@@ -152,8 +153,12 @@ Maybe in the previous parts we focused on the negative events for restaurants. E
 </div>
 
 According to the safety scores we calculated, it seems that the safest places to eat are the the two Airports (O'Hare, Garfield Ridge, Clearing) and the City Center (Loop). That's right, you may need to pay extra, since those are central tourist points, but you can be quite sure that the restaurant you are eating is fulfilling the regulations. As you are going further from this places, the risk increases. If you end up in Far South Side, feel free to grab something at South Deering, but be careful not to get lost in the streets, you may end up in Riverdale which has the worst overall restaurant performance in inspections.
-
-We have dived a lot into Chicago's sanitary inspections! Having seen all the maps you probably know Windy City like a back of your hand. As generally we have seen that things seem to look pretty good when thinking about sanitary safety in restaurants in Chicago there are still some conclusions to take with you. Firstly it would be good to think twice before grabbing lunch in South or Far South Chicago. Those areas seem to have biggest amount of *food poisoning* cases. Although South has also the greatest number of violations maybe it is still worth a try. As we all know, everything that is risky definitely tastes better. We've seen that generally restaurants in Chicago pass the sanitary inspections, most of places also managed to fix commited violations and improve their standards. This definitely gives us some hope for even better culinary experience in the most populous city in USA. If you are a fast-food fan and plan to have real american experience in that matter, we would suggest to keep away from KFC for some time in the next year, their violation trend is increasingly distressing... Finally if you have always dreamt of basing your own food business we definitely recommand to focus on keeping your floor clean and your refrigerator cold. 
+  
+We have dived deep into Chicago's sanitary inspections! Having seen all these maps, you probably now know Windy City like the back of your hand. Generally, we have seen that Chicago restaurants mostly fullfil sanitary safety requirements, but there are still things you should watch out for. Firstly it would be good to think twice before grabbing lunch in South or Far South Chicago. Those areas seem to have largest amount of **food poisoning** cases. 
+   
+Although South has also the greatest number of violations, it might still be worth a try. As we all know, everything that is risky definitely tastes better. We've seen that generally restaurants in Chicago pass the sanitary inspections, most of them also managed to fix commited violations and improve their standards. This definitely gives us some hope for a high-end culinary experience in one of the most populous cities in the USA. If you are a fast-food fan and plan to enjoy a real american meal, we would suggest to keep away from KFC for some time in the next year, their violation trend is increasingly distressing...   
+  
+Finally if you have always dreamt of basing your own food business we definitely recommand to focus on keeping your floor clean and your refrigerator cold. 
 
 
 
