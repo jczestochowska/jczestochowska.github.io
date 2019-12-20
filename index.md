@@ -23,14 +23,23 @@ It seems that majority of the restaurants managed to pass their inspections befo
 
 #### Violations
 
-So, if we really want to figure out how good a restaurant is, based on the inspection results, the common sence tells us that if a restaurant makes many violations, we might reconsider our decision to visit it. That is why we wanted to check how many violations restaurants make on average per inspection. But looking at several thousand of restaurants at a time isn't really possible, so we first group all of the restaurants based on their location. The city of Chicago is officially divided into 77 community areas, which are grouped into 9 districts. We used this geographical and administrative partition of the city as a starting point and checked how many violations per inspection restaurants make on average in each community area. **TODO**: Comment
+So, if we really want to figure out how good a restaurant is, based on the inspection results, common sense tells us that if a restaurant commits many violations, we might reconsider our decision to visit it. That is why we wanted to check how many violations restaurants make on average per inspection. But looking at several thousand of restaurants at a time isn't really possible, so we first group all of the restaurants based on their location. The city of Chicago is officially divided into 77 community areas, which are grouped into 9 districts. We used this geographical and administrative partition of the city as a starting point and checked how many violations per inspection restaurants make on average in each community area. 
 
-**INSERT** Map of average number of violations per inspection per area
+<div>
+{% include nb_violations_area.html %}
+</div>
+The community areas with the highest number of violations are West Ridge, South Lawndale, Washington Park and Chatham. We can see an area in the south of Chicago with noticeably high numbers of violations, made of Chatham, Roseland, West Pullman, Wasington Heights, and Morgan Park. The lakeside community areas, on the other hand, contain the safest restaurants : Loop, Near South side and Douglas.
+Are areas likely to change their number violations over time ? Let's take a look at how the number of violations evolves over time, for each community area.
+<div>
+{% include nb_violations_evolution.html %}
+</div>
+In most areas, the number of violations observed has decreased. Surprinsgly, the few areas who have seen their number increase are not the ones with the highest violation numbers : Near West Side and Logan Square, though definitely not the areas with least violations, were not the worst either as we've seen previously.
 
-Now we know the numbers, but we still don't know what hides behind them. Observed violations can differ in the aspect of the restaurant their describe: there can be some issues with the food, with the facilities or the training of the personnel. Knowing which violations and where were the most prevalent could give us some understanding. Was it related to food preparation process or cleaningness of the toilets? We can also find this kind of information.
+Now we know the numbers, but we still don't know what hides behind them. Observed violations are very diverse: they can represent issues with the food, with the facilities or the training of the personnel. Knowing which violations are the most prevalent and where they are mainly observed could give help us pick the best areas. 
+Contrary to what one might think, the number of violations is not always a good indicator of the inspection result. Indeed, some passing restaurants have comitted up to 13 violations, while some failing restaurants have less than 4 violations.
 
-**One note before we dive into the analysis:** Chicago changed their violation definitions in the middle of 2018. Before the change an establishment could receive one or more of 45 distinct violations. After the change, the violations were redefined and their number increased to 59. Also, the inspections became much stricter and now you're more likely to rather get just a "Pass with conditions" than a clear "Pass" if you violate some criteria. That is why in the analysis we will usually look at those two periods separately.
-
+**One note before we dive into the analysis:** Chicago changed their violation definitions in the middle of 2018. Before the change an establishment could receive one or more of 45 distinct violations. After the change, the violations were redefined and their number increased to 59. The inspections also became much stricter and inspectors are now more likely to deliver just "Pass with conditions" results rather than a clear "Pass" if some criteria are violated. That is why in the analysis we will usually look at those two periods separately.
+ 
 Although every violation describes some specific shortcoming of a restaurant, all of them, both before and after the change, can be grouped into 5 general categories:
 
 1. **Food violations:** violations that are related to the food and ingredients: the way they are obtained, stored, transported, prepared, labeled etc.
@@ -63,7 +72,7 @@ Although every violation describes some specific shortcoming of a restaurant, al
 
 <!-- Number of inspections tells us how many different fouls restaurant made, but it doesn't give any information about the core of the violation. Was it some life-threathening violation, or hazardous one? -->
 
-Now, let's see what are the violations that are made the most frequently. However, since our goal is to filter bad restaurants, we will focus only on the violations which were noticed in inspections that ended with failure. In the plot we will show top 25 most common violations in failed inspections before 1.7.2018.
+Now, let's see what are the most frequent violations. Since our goal is to filter bad restaurants, we will focus only on the violations which were noticed in inspections that ended with failure. Below are top 25 most common violations in failed inspections before 1.7.2018.
 
 {% include violations_failed_category_before_change.html %}
 
@@ -84,6 +93,10 @@ Of course the main interest point for us are critical violations. Those are the 
 {% include violations_failed_critical_category_before_change.html %}
 
 If based on previous plots we wondered where are the food related violations in restaurants' inspections, here they are. When looking at critical violations only, the top violation is related to **proper food storage temperature**. According to the full violation description, it means that potentially hazardous food meets temperature requirements during storage, preparation and service. On second and third place we have facility related violations, and then come the ones related to adequate cleaning of all necessary areas and equipement.
+
+The inspection board of Chicago also attributes risk levels to restaurants : restaurants with the highest risk level (Level 1) are considered dangerous and must be inspected more often than others, while restaurants with the lowest level (Level 3) are considered mostly safe and don't require frequent inspections. Let's see how these risk levels have evolved between 2010 and 2018 : 
+
+
 
 <div id="bigger_wrapper">
     <div id="map_wrapper">
@@ -121,7 +134,7 @@ As we previously discussed, not all violations are the same, and the most severe
 {% include sd_critical_community.html %}
 </div>
 
-By looking at districts, we can see that South Side restaurants make the most critical violations, where Northwest side is the safest district considering this criteria. If we take a closer look, Washington park restaurants on average make critical violation every fourth inspection. Oakland in South Side and Uptown in Far North Side are also highly ranked and can get a title of dangerous areas. 
+By looking at districts, we can see that South Side restaurants make the most critical violations, where Northwest side is the safest district considering this criteria. If we take a closer look, Washington park restaurants on average make critical violation every fourth inspection. Oakland in South Side and Uptown in Far North Side are also highly ranked and can be qualified as dangerous areas. 
 
 
 
