@@ -154,5 +154,5 @@ We can clearly see that South is deffinitely more problematic than North. Chatha
 **TODO** : Safety score map
 
 <div>
-{% include safety_scores_by_community_areas_map.html.html %}
+{% include safety_scores_by_community_areas_map.html %}
 </div>
