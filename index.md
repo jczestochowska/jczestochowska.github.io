@@ -52,6 +52,8 @@ Now, being familiar with that, let's dive into the analysis!
 
 First let's if there are any patterns of the most common violations noted in Chicago. As mentioned, we can look at Chicago before the change of violations and after it.
 
+{% include most_common_violations.html %}
+
 <div id="bigger_wrapper">
     <div class="clearfix" id="map_wrapper">
         <div class="map-400 map-left">
