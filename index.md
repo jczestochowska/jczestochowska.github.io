@@ -5,7 +5,7 @@ Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food
 --->
 Imagine that you are traveling to Chicago next week. Should it be for business or leisure, you'll be staying in Chicago for four days and you would like to discover the local gastronomy. A morning coffee with a lake view, then lunch with an old friend in a local hidden gem place and, at the end of the day a nice and romantic dinner. 
 
-But imagination is not enough to make such a perfect day happen ! If you want perfect meals all day long, you have to spend some time figuring out which places you want to visit. This can often be a challenging and frustrating task, especially in an unknown city. 
+But imagination is not enough to make such a perfect day happen! If you want perfect meals all day long, you have to spend some time figuring out which places you want to visit. This can often be a challenging and frustrating task, especially in an unknown city. 
 
 So, what would be your approach to find a good restaurant? For sure, Google will be your friend in this exploration. Nowadays, few people visit places without checking user reviews on TripAdvisor and Facebook, and the magnificent pictures of food that restaurants publish on their Instagram profiles are often used as selection criteria. And let's not forget friends of friends of friends who have recently been in Chicago, who can often offer useful recommendations.
 
@@ -88,9 +88,11 @@ Of course the main interest point for us are critical violations. Those are the 
 If based on previous plots we wondered where are the food related violations in restaurants' inspections, here they are. When looking at critical violations only, the top violation is related to **proper food storage temperature**. According to the full violation description, it means that potentially hazardous food meets temperature requirements during storage, preparation and service. On second and third place we have facility related violations, and then come the ones related to adequate cleaning of all necessary areas and equipement.
 
 All inspections end with a verdict : Pass, Pass with conditions or Fail. Hence, the percentage of restaurants having succesfully passed their last inspection in each area
-is a good indicator of safety. Let's see which areas have the best and worst passing rates, and how these results evolve over time : 
+is a good indicator of safety. Let's see which areas have the best and worst passing rates, and how these results evolve over time: 
 
+<div class="map">
 {% include pass_rates_year.html %}
+</div>
 
 Starting in 2010, pass rates look good : Most areas have more than 85% of their restaurants passing inspections. Things get worse in 2012, with areas like Riverdale getting as low as 50%. Fast-forward to 2019, and we can see that although pass rates seem to have improved since 2012, they are still worse than in 2010. From 2010 to 2019, areas have overall seen their percentage of restaurants deemed safe by the authorities decrease, with Austin going from 84.8% to 74.8%, and Hermosa going from 94.1% to 75%
 
@@ -100,12 +102,12 @@ Since inspections have gotten stricter over time, has the overall pass rate of C
 
 From 74% in 2010 to 65%, the inspection pass rate of Chicago has decreased, but by less than 10%.  
   
-Now that you know which areas are the safest to eat in, you are probably choosing a restaurant. Like most people, you might want to stick with famous restaurant chains, such as McDonald's, Burger King or KFC. But which of these chains is actually the safest ? We have computed and compared some metrics to help you make the healthiest choice, starting with the number of violations over time :
+Now that you know which areas are the safest to eat in, you are probably choosing a restaurant. Like most people, you might want to stick with famous restaurant chains, such as McDonald's, Burger King or KFC. But which of these chains is actually the safest ? We have computed and compared some metrics to help you make the healthiest choice, starting with the number of violations over time:
 
 {% include chain_violation_year.html %}
 
 From 2010 to 2019, the ranking of the safest restaurant chains changes every year : Subway starts as the safest, quickly replaced by Starbucks, then Taco Bell, KFC and finally Taco Bell again.  
-Violation numbers advise us to prefer tacos(Taco Bell) to fried chicken(KFC). What about inspection pass rates ?
+Violation numbers advise us to prefer tacos (Taco Bell) to fried chicken (KFC). What about inspection pass rates ?
 
 {% include chain_pass_rate.html %}
 
@@ -126,7 +128,6 @@ As we previously discussed, not all violations are the same, and the most severe
 </div>
 
 By looking at districts, we can see that South Side restaurants make the most critical violations, where Northwest side is the safest district considering this criteria. If we take a closer look, Washington park restaurants on average make critical violation every fourth inspection. Oakland in South Side and Uptown in Far North Side are also highly ranked and can be qualified as dangerous areas. 
-
 
 
 Another criteria we can use is number of inspections ended in failure. Naturally, if there are more failures, the area is more dangerous. We will check the proportion of failures among total inspections for each area. If it is higher for some areas then for others, we consider them more dangerous areas.
