@@ -25,9 +25,9 @@ So, if we really want to figure out how good a restaurant is, based on the inspe
 
 **INSERT** Map of average number of violations per inspection per area
 
-Now we know the numbers, but we still don't know what hides behind them. Observed violations can differ in the aspect of the restaurant their describe: there can be some issues with the food, with the facilities or the training of the personnel. Knowing which violations and where were the most prevalent could give us some understanding. Was it related to food preparation process or cleaningness of the toilets? We can also find this kind of information.
+Now one knows the numbers, but there is still a mystery what hides behind them. Observed violations can differ in the aspect of the restaurant their describe: there can be some issues with the food, with the facilities or the training of the personnel. Knowing which violations and where were the most prevalent could give us some understanding. Was it related to food preparation process or cleaningness of the toilets? We can also find this kind of information.
 
-**One note before we dive into the analysis:** Chicago changed their violation definitions in the middle of 2018. Before the change an establishment could receive one or more of 45 distinct violations. After the change, the violations were redefined and their number increased to 59. Also, the inspections became much stricter and now you're more likely to rather get just a "Pass with conditions" than a clear "Pass" if you violate some criteria. That is why in the analysis we will usually look at those two periods separately.
+**One note before we start:** Chicago changed their violation definitions in the middle of 2018. Before the change an establishment could receive one or more of 45 distinct violations. After the change, the violations were redefined and their number increased to 59. Also, the inspections became much stricter and now restaurant is more likely to rather get just a "Pass with conditions" than a clear "Pass" if it violates some criteria. That is why we will usually look at those two periods separately.
 
 Although every violation describes some specific shortcoming of a restaurant, all of them, both before and after the change, can be grouped into 5 general categories:
 
@@ -37,13 +37,17 @@ Although every violation describes some specific shortcoming of a restaurant, al
 4. **Staff related violations:** violations related to the employees (necesarry trainings, the way they work with food, manager's work etc.).
 5. **Other:** the violations that did not match the previous groups (eg. summary report of the inspection visible to the public, no smoking regulations etc.).
 
+Now, being familiar with that, let's dive into the analysis!
+
+First let's if there are any patterns of the most common violations noted in Chicago. As mentioned, we can look at Chicago before the change of violations and after it.
+
 <div id="bigger_wrapper">
     <div class="clearfix" id="map_wrapper">
         <div class="map-400 map-left">
             {% include most_common_violations_before_change.html %}
         </div>
         <div id="map_text">
-            <p>(draft) Here I comment the patterns, e.g. there is a south east region where each neighborhood has issues with dirty equipment, most of Chicago is proper food maintenance.</p>
+            <p>Before the July of 2018 the predominant violation in most Chicago communities is **Proper floors maintenance**. Between Cicero and Oak Loan in the south-west side of Chicago you can also find the region of 7 communities, for whose restaurants the *Clean equipment* criterion was violated the most</p>
         </div>
     </div>
 </div>
@@ -54,30 +58,30 @@ Although every violation describes some specific shortcoming of a restaurant, al
             {% include most_common_violations_after_change.html %}
         </div>
         <div id="map_text">
-            <p>(draft) In new violations, lower south side of bay site has issues with Adequate management (what does it mean)?</p>
+            <p>After the change of violations restaurants in the huge part of the middle and southern bay area as well as the region between the New City and Greater Grand Crossing most oftenly violated **Adequate management** criterion - this concerns regulations about personell hierarchy and their reporting procuders. There are also regions in the north south and west of Chicago	where *Procedures for reacting to customer sickness* was the most common issue.</p>
         </div>
     </div>
 </div>
 
 <!-- Number of inspections tells us how many different fouls restaurant made, but it doesn't give any information about the core of the violation. Was it some life-threathening violation, or hazardous one? -->
 
-Now, let's see what are the violations that are made the most frequently. However, since our goal is to filter bad restaurants, we will focus only on the violations which were noticed in inspections that ended with failure. In the plot we will show top 25 most common violations in failed inspections before 1.7.2018.
+Since our goal is to filter bad restaurants, let's now focus only on the violations which were noticed in inspections that ended with failure. In the plot you can see the 25 most common violations in failed inspections before the violation change.
 
 {% include violations_failed_category_before_change.html %}
 
-We have a winner! Among the failed inspections, dirty floor was mentioned the most as one of the violations. Two out of top three violations are related to cleaningness in the restaurant. Interestingly, many restaurants have problems with walls and ceiling constructions. Of course, there could be that some part of ceiling and wall problems is also due to dirtiness apart from construction.
+We have a winner! As it was also seen on community maps of all violations, also among the failed inspections only, dirty floor was mentioned the most as one of the violations. Two out of top three violations are related to cleaningness in the restaurant. Interestingly, many restaurants have problems with walls and ceiling constructions. Of course, there could be that some part of ceiling and wall problems is also due to dirtiness apart from construction.
 
-It seems that "most popular violations" are sanitary and facility related. What suprises is that, even though we are analysing restaurants, there is only one food related violation among the top 10 and it is on 10th place.
+It seems that "most popular violations" are sanitary and facility related. It is surprising that even though we are analysing restaurants, there is only one food related violation among the top 10 and it is on 10th place.
 
 Even though after June 2018. violations changed, since we group violations in the same 5 categories as before, let's check if there is any change in the most frequent violation categories in failed inspections.
 
 {% include violations_failed_category_after_change.html %}
 
-We already mentioned the big differences and stricter criteria after the change date. That can also be noticed in the violations that are made the most. Now for the first time we can see a big impact of **violations related to employees training**. Apparently, many restaurants did not have time do adjust properly to the new regulations and failed in the past year and a half due to inadequate management or lack of allergen training for the staff. Also, the City of Chicago requires defined procedures for many situations that can happen in a restaurant, and one that is the most problematic for restaurants to comply with is **reacting in case of customer sickness.** So be careful and remind yourself of your first aid knowledge, because the restaurant employees apparently cannot help you properly. Of course, when looking at these reasons, we have to take into account that these changed violation list is valid for less than 18 months, so there is smaller amount of inspections which can be analyzed.
+We already mentioned the big differences and stricter criteria after the change date. That can also be noticed in the most often violations. Now for the first time we can see a big impact of **violations related to employees training**. Apparently, many restaurants did not have time do adjust properly to the new regulations and failed in the past year and a half due to inadequate management or lack of allergen training for the staff. Also, the City of Chicago requires defined procedures for many situations that can happen in a restaurant, and one that is the most problematic for restaurants to comply with is **reacting in case of customer sickness.** So be careful and remind yourself of your first aid knowledge, because the restaurant employees apparently cannot help you properly. Of course, when looking at these reasons, we have to take into account that these changed violation list is valid for less than 18 months, so there is a smaller amount of inspections which can be analyzed.
 
 Great, now we had a deeper look into the meaning of the violations and understood what are the main problems for the restaurant. However, we still haven't considered the severity of the discovered violations. Validations before change were divided into 3 groups based on how serious the violation is: critical, serious or minor violation, sorted in decreasing severity.
 
-Of course the main interest point for us are critical violations. Those are the most serious and dangerous violations a restaurant can make. Therefore, we want to se what are the most frequent critical violations in inspections.
+Of course the main interest point for us are critical violations. Those are the most serious and dangerous violations a restaurant can make. Therefore, we want to see what are the most frequent critical violations in inspections.
 
 {% include violations_failed_critical_category_before_change.html %}
 
